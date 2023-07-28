@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM, Eventos y Funciones</title>
+
+    <script type="text/javascript" src="js/32-ejercicio.js"></script>
+</head>
+<body>
+    <h1>Ejercicio DOM, Eventos y Funciones - Cursito Udemy</h1>
+
+    <!-- Formulario: 
+    *Nombre
+    *Apellido
+    *Edad 
+    *Boton Submit
+
+    Mostrar datos por pantalla
+
+    Tener boton que al darle click nos muestra los datos actuales del formulario
+    -->
+
+    <p>
+        <form method="post" action="#" id="form" onsubmit="return false;">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </p>
+
+            <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido">
+            </p>
+
+            <p>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad">
+            </p>
+                <input type="submit" value="Enviar" id="submit">
+        </form>
+
+        <br>
+
+        <button type="button" id="showForm">Mostrar contenido de formulario</button>
+
+        <p>
+            <p id="showNombre"></p>
+            <p id="showApellido"></p>
+            <p id="showEdad"></p>
+        </p>
+    </p>
+</body>
+</html>
